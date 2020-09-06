@@ -1,0 +1,42 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: calc((100% - 150px) / 6);
+    margin-right: 30px;
+
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+  }
+
+  .clients-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .icon {
+      fill: #afb1b8;
+      background-color: $white-text-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+    }
+
+    &:hover .icon,
+    &:focus .icon {
+      fill: $accent-color;
+    }
+  }
+}

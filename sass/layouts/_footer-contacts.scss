@@ -1,0 +1,23 @@
+.site-footer {
+  .address {
+    margin: 0 0 9px 0;
+    color: $white-text-color;
+    font-style: normal;
+  }
+
+  .link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.logo-adress .item:not(:last-child) {
+  margin-bottom: 9px;
+}

@@ -1,0 +1,28 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .title-list {
+    margin: 30px 0 0;
+    p {
+      margin: 10px 0 0;
+    }
+  }
+
+  .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.features .icon {
+  display: flex;
+  height: 120px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+}

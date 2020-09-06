@@ -1,0 +1,34 @@
+.mailing {
+  .title-list {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .email {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 0 15px 15px;
+    width: 358px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .button-mailing {
+    display: inline-flex;
+    align-items: center;
+
+    &::after {
+      content: " ";
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-image: url(../images/studio/icon-send.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

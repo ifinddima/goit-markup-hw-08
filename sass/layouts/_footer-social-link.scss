@@ -1,0 +1,37 @@
+.join {
+  .list {
+    display: flex;
+  }
+
+  .title-list {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .item:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    fill: $white-text-color;
+  }
+}

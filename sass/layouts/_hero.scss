@@ -3,7 +3,7 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  max-width: 1600px;
+  // max-width: 1600px;
 
   padding: 200px 0;
   margin-right: auto;
@@ -22,9 +22,18 @@
   .title-hero {
     color: $white-text-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-transform: uppercase;
     margin: 0 0 30px;
   }
+
+  // .title-hero {
+  //   color: $white-text-color;
+  //   font-weight: 900;
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  //   text-transform: uppercase;
+  //   margin: 0 0 30px;
+  // }
 }

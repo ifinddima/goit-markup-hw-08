@@ -115,7 +115,8 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -601,6 +602,12 @@ img {
 .site-footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-footer {
+    padding: 94px 0;
+  }
 }
 
 .site-footer .title-list {

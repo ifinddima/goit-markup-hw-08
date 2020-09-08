@@ -130,18 +130,39 @@
           <ul class="list">
             <li class="item">
               <img
-                src="./images/studio/img1.jpg"
-                alt="Включенный ноутбук"
+                alt="Описание изображени для всех версий"
                 width="370"
+                src="./images/studio/img1.jpg"
+                srcset="
+                  ./images/studio/img1.jpg    1x,
+                  ./images/studio/img1@2x.jpg 2x
+                "
               />
+
               <h3 class="title-list">Десктопные приложения</h3>
             </li>
             <li class="item">
-              <img src="./images/studio/img2.jpg" alt="Смартфон" width="370" />
+              <img
+                alt="Смартфон"
+                width="370"
+                src="./images/studio/img2.jpg"
+                srcset="
+                  ./images/studio/img2.jpg    1x,
+                  ./images/studio/img2@2x.jpg 2x
+                "
+              />
               <h3 class="title-list">Мобильные приложения</h3>
             </li>
             <li class="item">
-              <img src="./images/studio/img3.jpg" alt="Монитор" width="370" />
+              <img
+                alt="Монитор"
+                width="370"
+                src="./images/studio/img3.jpg"
+                srcset="
+                  ./images/studio/img3.jpg    1x,
+                  ./images/studio/img3@2x.jpg 2x
+                "
+              />
               <h3 class="title-list">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -154,12 +175,33 @@
           <h2 class="title">Наша Команда</h2>
           <ul class="list">
             <li class="item">
-              <img
-                src="./images/studio/team_1.jpg"
-                alt="Фото члена команды"
-                width="270"
-                height="260"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/studio/desktop/team_1.jpg    1x,
+                    ./images/studio/desktop/team_1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/team_1.jpg    1x,
+                    ./images/studio/tablet/team_1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/team_1.jpg    1x,
+                    ./images/studio/mobile/team_1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/studio/team_1.jpg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="description">
                 <h3 class="title-team">Игорь Демьяненко</h3>
                 <p class="team-description">Product Designer</p>
@@ -223,12 +265,33 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/studio/team_2.jpg"
-                alt="Фото члена команды"
-                width="270"
-                height="260"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/studio/desktop/team_2.jpg    1x,
+                    ./images/studio/desktop/team_2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/team_2.jpg    1x,
+                    ./images/studio/tablet/team_2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/team_2.jpg    1x,
+                    ./images/studio/mobile/team_2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/studio/team_2.jpg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="description">
                 <h3 class="title-team">Ольга Репина</h3>
                 <p class="team-description">Frontend Developer</p>
@@ -292,12 +355,33 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/studio/team_3.jpg"
-                alt="Фото члена команды"
-                width="270"
-                height="260"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/studio/desktop/team_3.jpg    1x,
+                    ./images/studio/desktop/team_3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/team_3.jpg    1x,
+                    ./images/studio/tablet/team_3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/team_3.jpg    1x,
+                    ./images/studio/mobile/team_3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/studio/team_3.jpg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="description">
                 <h3 class="title-team">Николай Тарасов</h3>
                 <p class="team-description">Marketing</p>
@@ -361,12 +445,33 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/studio/team_4.jpg"
-                alt="Фото члена команды"
-                width="270"
-                height="260"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/studio/desktop/team_4.jpg    1x,
+                    ./images/studio/desktop/team_4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/team_4.jpg    1x,
+                    ./images/studio/tablet/team_4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/team_4.jpg    1x,
+                    ./images/studio/mobile/team_4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/studio/team_4.jpg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="description">
                 <h3 class="title-team">Михаил Ермаков</h3>
                 <p class="team-description">UI Designer</p>

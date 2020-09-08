@@ -2,6 +2,10 @@
   background-color: #2f303a;
   padding: 60px 0;
 
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
   .title-list {
     color: $white-text-color;
   }

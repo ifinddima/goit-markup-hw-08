@@ -18,6 +18,7 @@
       background-color: $white-text-color;
       text-align: center;
       padding: 60px 0;
+      z-index: 999;
     }
   }
 
@@ -54,11 +55,10 @@
 }
 
 .menu-nav {
-  .current {
+  .link.current {
     position: relative;
     display: inline-block;
     color: $accent-color;
-    padding-bottom: 8px;
   }
 
   @media screen and (max-width: 767px) {
@@ -82,6 +82,15 @@
   border: none;
   background-color: transparent;
 
+  .icon-burger {
+    fill: $title-text-color;
+  }
+
+  &:focus .icon-burger,
+  &:hover .icon-burger {
+    fill: $accent-color;
+  }
+
   .close-menu-burger {
     display: none;
   }
@@ -93,6 +102,7 @@
   &.is-open .menu-burger {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     display: none;
   }

@@ -95,13 +95,13 @@
   line-height: 1.61;
   text-transform: uppercase;
   margin: 0 0 30px;
-}
 
-// .title-hero {
-//   color: $white-text-color;
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-transform: uppercase;
-//   margin: 0 0 30px;
-// }
+  @media screen and(min-width:1200px) {
+    color: $white-text-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+}

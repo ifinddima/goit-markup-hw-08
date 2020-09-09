@@ -95,6 +95,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
 .title-list {
   color: #212121;
   font-weight: 700;
@@ -190,6 +196,13 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -230,17 +243,23 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
+  position: relative;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  min-height: 581px;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .title-modal {
@@ -376,33 +395,67 @@ img {
 
 .header-site {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
-.site-header {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 78px;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+  .menu-container.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+  }
 }
 
-.site-nav .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-container .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.site-nav .link {
+@media screen and (max-width: 767px) {
+  .menu-container .menu-contacts {
+    margin-top: 60px;
+  }
+}
+
+.menu-container .link {
   color: #212121;
   font-weight: 500;
   line-height: 1.14;
@@ -413,35 +466,93 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.menu-container .link:hover, .menu-container .link:focus {
   color: #2196f3;
 }
 
-.menu-nav {
-  min-height: 78px;
-  padding-top: 32px;
-}
-
-.menu-nav .item {
+.menu-nav .current {
   position: relative;
+  display: inline-block;
+  color: #2196f3;
+  padding-bottom: 8px;
 }
 
-.menu-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .menu-nav .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .close-menu-burger {
+  display: none;
+}
+
+.menu-button.is-open .close-menu-burger {
+  display: block;
+}
+
+.menu-button.is-open .menu-burger {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .site-header .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  text-align: center;
 }
 
-.contact .item:not(:last-child) {
-  margin-right: 30px;
+.menu-contacts .item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
-.contact .link {
+@media screen and (min-width: 768px) {
+  .menu-contacts .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .menu-contacts .item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-contacts .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.menu-contacts .link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -461,16 +572,16 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact .link:hover, .contact .link:focus {
+.menu-contacts .link:hover, .menu-contacts .link:focus {
   color: #2196f3;
 }
 
-.contact .link:hover .icon-header,
-.contact .link:focus .icon-header {
+.menu-contacts .link:hover .icon-header,
+.menu-contacts .link:focus .icon-header {
   fill: #2196f3;
 }
 
-.contact .icon-header {
+.menu-contacts .icon-header {
   fill: #757575;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -481,13 +592,18 @@ img {
 
 .current::after {
   position: absolute;
-  bottom: -1px;
   content: " ";
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .current::after {
+    bottom: -28px;
+  }
 }
 
 .hero {
@@ -559,6 +675,17 @@ img {
   line-height: 1.61;
   text-transform: uppercase;
   margin: 0 0 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title-hero {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

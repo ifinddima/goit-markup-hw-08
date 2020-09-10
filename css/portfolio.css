@@ -757,11 +757,29 @@ img {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 63px 24px;
+  padding: 5px 5px;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   font-size: 18px;
   line-height: 1.55;
+}
+
+@media screen and (min-width: 480px) {
+  .work-list .portfolio-description {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-list .portfolio-description {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list .portfolio-description {
+    padding: 63px 24px;
+  }
 }
 
 .site-footer {

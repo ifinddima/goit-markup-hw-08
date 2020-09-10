@@ -1018,12 +1018,6 @@ img {
   padding: 60px 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .site-footer {
-    padding: 94px 0;
-  }
-}
-
 .site-footer .title-list {
   color: #ffffff;
 }
@@ -1058,8 +1052,10 @@ img {
   }
 }
 
-.site-footer .logo-adress {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .site-footer .logo-adress {
+    margin-bottom: 60px;
+  }
 }
 
 .site-footer .address {
@@ -1085,8 +1081,10 @@ img {
   margin-bottom: 9px;
 }
 
-.join {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .join {
+    margin-bottom: 60px;
+  }
 }
 
 .join .list {

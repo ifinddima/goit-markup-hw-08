@@ -762,6 +762,7 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.55;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 480px) {
